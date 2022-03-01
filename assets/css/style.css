@@ -148,8 +148,7 @@ button:hover{
 	width: 100%;
 }
 .features{
-	overflow:hidden;
-	height:200vh;
+	height:250vh;
 }
 .features .sec img{
 	position: relative;
@@ -220,7 +219,7 @@ button:hover{
 }
 .circ{
 	position:absolute;
-	top:21%;
+	top:20%;
 	left:50%;
 	width:750px;
 }
@@ -273,7 +272,7 @@ circle p{
 .cta_row{
 	position:relative;
 	left:10%;
-	top:9%;
+	top:7%;
 	width:50%;
 }
 a{
@@ -302,7 +301,7 @@ a{
 }
 .message{
 	position:absolute;
-	top:28%;
+	top:26%;
 	margin:0 9% 0 9%;
 }
 .message p{
@@ -317,19 +316,21 @@ a{
 }
 .timeline{
 	position:relative;
-	top:35%;
+	top:15%;
+	height:120%;
 }
 
 .timeline ul {
   padding: 50px 0;
+  height:80%;
 }
 
 .timeline ul li {
   list-style-type: none;
   position: relative;
   width: 6px;
-  margin: 0 auto;
-  padding-top: 50px;
+  margin: 0 0 0 11vh;
+  padding-bottom: 200px;
   background: rgba(134, 190, 122, 0.3);
 }
 
@@ -337,75 +338,84 @@ a{
   content: "";
   position: absolute;
   left: 50%;
-  bottom: 0;
   transform: translateX(-50%);
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background: inherit;
-  z-index: 1;
+  background: rgba(134, 190, 122, 0.2);
+  top:0%;
+}
+
+.timeline ul li:nth-child(1){
+	position:relative;
+	top:10%;
+	height:20%;
+}
+.timeline ul li:nth-child(2){
+	position:relative;
+	top:10%;
+	height:35%;
+}
+.timeline ul li:nth-child(3){
+	position:relative;
+	top:10%;
+	height:30%;
+}
+.timeline ul li:nth-child(4){
+	position:relative;
+	top:10%;
+	height:30%;
+}
+.timeline ul li.in-view {
+	background: rgba(134, 190, 122, 1);
+	transition: all 0.8s ease 0s;
 }
 
 .timeline ul li div {
   position: relative;
   bottom: 0;
   width: 400px;
-  padding: 15px;
-  background: #f45b69;
+  padding: 5px 0 10px 0;
+  background: #ffffff;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
 }
 
 .timeline ul li div::before {
   content: "";
   position: absolute;
-  bottom: 7px;
-  width: 0;
-  height: 0;
-  border-style: solid;
 }
 
-.timeline ul li:nth-child(odd) div {
-  left: 45px;
-}
-
-.timeline ul li:nth-child(odd) div::before {
-  left: -15px;
-  border-width: 8px 16px 8px 0;
-  border-color: transparent #f45b69 transparent transparent;
-}
-
+.timeline ul li:nth-child(odd) div,
 .timeline ul li:nth-child(even) div {
-  left: -439px;
+  left: 30px;
 }
 
-.timeline ul li:nth-child(even) div::before {
-  right: -15px;
-  border-width: 8px 0 8px 16px;
-  border-color: transparent transparent transparent #f45b69;
+.timeline ul li:nth-child(odd) div::before,
+.timeline ul li:nth-child(even) div::before{
+  display:none;
 }
 
-time {
-  display: block;
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-bottom: 8px;
-}
 
 
 /* EFFECTS
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .timeline ul li::after {
-  transition: background 0.5s ease-in-out;
+  transition: background 1s ease-in-out;
 }
 
 .timeline ul li.in-view::after {
-  background: #f45b69;
+  background: #86BE7A;
 }
 
 .timeline ul li div {
   visibility: hidden;
   opacity: 0;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.8s ease-in-out;
 }
 
 .timeline ul li:nth-child(odd) div {
@@ -413,7 +423,7 @@ time {
 }
 
 .timeline ul li:nth-child(even) div {
-  transform: translate3d(-200px, 0, 0);
+  transform: translate3d(200px, 0, 0);
 }
 
 .timeline ul li.in-view div {
@@ -448,6 +458,7 @@ time {
   }
   .timeline ul li:nth-child(even) div::before {
     left: -15px;
+
     border-width: 8px 16px 8px 0;
     border-color: transparent #f45b69 transparent transparent;
   }
@@ -462,9 +473,6 @@ time {
   border-radius: 0;
 }
 
-.timeline-rhombus ul li::after {
-  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-}
 
 .timeline-rhombus ul li div::before {
   bottom: 12px;
@@ -498,7 +506,7 @@ time {
 }
 
 .timeline-infinite ul li::after {
-  animation: scaleAnimation 2s infinite;
+  animation: scaleAnimation 3s infinite;
 }
 
 @keyframes scaleAnimation {

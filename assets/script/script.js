@@ -55,7 +55,7 @@ const registerVideo = (bound, video) => {
 	window.requestAnimationFrame(scrollVideo);
 }
 
-registerVideo("#bound-two", "#bound-two video")
+registerVideo("#bound-two", "#bound-two video");
 
 (function () {
   "use strict";
@@ -63,8 +63,6 @@ registerVideo("#bound-two", "#bound-two video")
   // define variables
   var items = document.querySelectorAll(".timeline li");
 
-  // check if an element is in viewport
-  // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
   function isElementInViewport(el) {
     var rect = el.getBoundingClientRect();
     return (
