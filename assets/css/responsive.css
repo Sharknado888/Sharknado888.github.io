@@ -1,0 +1,178 @@
+@media only screen and (max-width:868px){
+	body.disabledScroll{
+		overflow: hidden;
+	}
+	header{
+		height : 55px;
+	}
+	.sticky{
+		height : 50px;
+	}
+	header .menu-list{
+		position: fixed;
+		top:0;
+		right:-100%;
+		height:100vh;
+		width:100%;
+		max-width:400px;
+		background:black;
+		display:block;
+		padding:40px 15% 0 15%;
+		text-align:center;
+		transition:  0.3s ease;
+		opacity: 2 !important;
+		z-index:10000;
+	}
+	header .menu-list.active{
+		right:0%;
+	}
+	header .menu-list li{
+		margin-top:45px;
+	}
+	header .menu-list li a{
+		font-size:23px;
+	}
+	.icon{
+		display:block;
+		transition: all 0.3s ease;
+	}
+	.icon.hide{
+		display: none;
+	}
+}
+@media screen and (min-width: 1089px) and (max-width: 1306px){
+	#text{
+		font-size: 50px;
+	}
+}
+@media screen and (min-width: 872px) and (max-width: 1088px){
+	.text-wrapper{
+		padding-top:16%;
+	}
+	#text{
+		line-height: 60px;
+		font-size: 40px;
+	}
+	video {
+		width: 100%;
+	}
+}
+@media screen and (min-width: 695px) and (max-width: 871px){
+	.text-wrapper{
+		padding-top:13%;
+	}
+	#text{
+		font-size: 32px;
+		line-height: 60px;
+	}
+	button{
+		margin-right:70px;
+		padding:9px 25px;
+		width: 140px;
+		height: 43px;
+		border-radius: 12px;
+		font-size: 20px;
+	}
+}
+@media screen and (min-width: 609px) and (max-width: 695px){
+	.text-wrapper{
+		padding-top:13%;
+	}
+	#text{
+		font-size: 28px;
+		line-height: 40px;
+	}
+	.navbar{
+		height:50px;
+	}
+	.navbar .logo img{
+		height:1%;
+	}
+	
+	button{
+		margin-right:50px;
+		padding:9px 25px;
+		width: 140px;
+		height: 43px;
+		border-radius: 12px;
+		font-size: 20px;
+	}
+}
+@media screen and (min-width: 541px) and (max-width: 608px){
+	.text-wrapper{
+		padding-top:13%;
+	}
+	#text{
+		font-size: 24px;
+		line-height: 35px;
+	}
+	button{
+		margin-right:40px;
+		padding:9px 25px;
+		width: 110px;
+		height: auto;
+		border-radius: 12px;
+		font-size: 16px;
+	}
+	
+	header .menu-list{
+		padding:40px 23% 0 23%;
+	}
+}
+@media screen and (min-width: 451px) and (max-width: 540px){
+	.text-wrapper{
+		padding-top:13%;
+	}
+	#text{
+		font-size: 20px;
+		line-height: 30px;
+	}
+	button{
+		margin-right:40px;
+		padding:9px 25px;
+		width: 107px;
+		height: auto;
+		border-radius: 12px;
+		font-size: 14px;
+	}
+	
+	header .menu-list{
+		padding:40px 23% 0 23%;
+	}
+}
+@media screen and (min-width: 397px) and (max-width: 450px){
+	.text-wrapper{
+		padding-top:13%;
+	}
+	#text{
+		font-size: 18px;
+		line-height: 25px;
+	}
+	
+	header .menu-list{
+		padding:40px 23% 0 23%;
+	}
+}
+@media screen and (max-width: 396px){
+	.text-wrapper{
+		padding-top:13%;
+	}
+	#text{
+		font-size: 15px;
+		line-height: 22px;
+	}
+	header .menu-list{
+		padding:40px 23% 0 23%;
+}
+@media screen and (min-width: 1635px){
+	
+	#text{
+		font-size: 70px;
+	}
+}
+@media screen and (min-width: 1907px){
+	
+	#text{
+		font-size: 80px;
+	}
+}
